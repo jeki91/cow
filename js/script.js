@@ -183,6 +183,11 @@ if (burger) {
 		burger.classList.toggle('active');
 		menu.classList.toggle('active');
 	});
+	menu.addEventListener("click", function(e) {
+		document.body.classList.toggle('lock');
+		burger.classList.toggle('active');
+		menu.classList.toggle('active');
+	});
 }
 
 function setCursorPosition(pos, e) {
